@@ -10,7 +10,7 @@
     padding: 10px;
     width: 40%;
     border: solid 2px black;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: block;
     transform:translate(0%,5%) ;
     margin-left:auto;
@@ -18,7 +18,7 @@
     margin-bottom:10px;
     width: 250px;
     margin: auto;
-    background: #eee;
+    background: rgb(13, 0, 83);
 
     border: 20px solid transparent;
 
