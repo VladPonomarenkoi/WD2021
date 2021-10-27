@@ -12,6 +12,7 @@
     border: solid 2px black;
     color: rgb(255, 255, 255);
     display: block;
+    box-shadow:0 0 20px rgb(0, 68, 255);
     transform:translate(0%,5%) ;
     margin-left:auto;
     margin-right:auto;
@@ -39,6 +40,7 @@
     margin-top: 3%;
     margin-left: 20%;
     margin-right: 20%;
+    box-shadow:0 0 20px rgb(209, 143, 0);
     padding-bottom: 60px;
     text-align: center;
 }
