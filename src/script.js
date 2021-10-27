@@ -21,10 +21,10 @@ function func1() {
 
 }
 const func = (response) => {
-    t0.textContent = `${Math.round(res1.main.temp - 272.15)} degrees`;
-    t1.textContent = `${Math.round(res1.main.temp_min - 272.15)} degrees`;
-    t2.textContent = `${Math.round(res1.main.temp_max - 272.15)} degrees`;
-    t3.textContent = `${Math.round(res1.main.feels_like - 272.15)} degrees`;
+    t0.textContent = `${Math.round(res1.main.temp - 272.15)} °`;
+    t1.textContent = `${Math.round(res1.main.temp_min - 272.15)} °`;
+    t2.textContent = `${Math.round(res1.main.temp_max - 272.15)} °`;
+    t3.textContent = `${Math.round(res1.main.feels_like - 272.15)} °`;
     t4.textContent = `${res1.weather[0].description}`;
 
 }
