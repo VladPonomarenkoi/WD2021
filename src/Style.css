@@ -9,10 +9,14 @@
     background-color: rgb(65, 65, 65);
     padding: 10px;
     width: 40%;
+    -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
     border: solid 2px black;
     color: rgb(255, 255, 255);
     display: block;
-    box-shadow:0 0 20px rgb(0, 68, 255);
+    box-shadow:0 0 50px rgb(0, 68, 255);
     transform:translate(0%,5%) ;
     margin-left:auto;
     margin-right:auto;
@@ -26,7 +30,6 @@
     -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
     -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
     border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
-
     border-image-slice: 1;
 }
 .text {
@@ -35,12 +38,12 @@
 }
 .main {
     background-image: url(img/Mammatus_clouds_in_the_Nepal_Himalayas\ \(1\).jpg);
-    margin-top: 3px;
-    width: 60%;
+    box-shadow:0 0 20px rgb(209, 143, 0);
     margin-top: 3%;
+    text-align: center;
     margin-left: 20%;
     margin-right: 20%;
-    box-shadow:0 0 20px rgb(209, 143, 0);
+    width: 60%;
     padding-bottom: 60px;
-    text-align: center;
+    margin-top: 3px;
 }

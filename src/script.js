@@ -1,10 +1,10 @@
 let URL1 = "https://api.openweathermap.org/data/2.5/weather?q=Nizhyn,%20UA&APPID=6ed55aaa6af55f24b71d529588503993"
 
-const t0 = document.getElementById("p1")
-const t1 = document.getElementById("p2")
-const t2 = document.getElementById("p3")
-const t3 = document.getElementById("p4")
-const t4 = document.getElementById("p5")
+const t0 = document.getElementById("w1")
+const t1 = document.getElementById("w2")
+const t2 = document.getElementById("w3")
+const t3 = document.getElementById("w4")
+const t4 = document.getElementById("w5")
 
 let res1;
 
@@ -31,7 +31,7 @@ const func = (response) => {
 
 func1()
 
-const btn = document.querySelector('.butt');
+const btn = document.querySelector('.button');
 btn.addEventListener('click', function () {
 
     const n = document.querySelector('.text').value
@@ -40,12 +40,12 @@ btn.addEventListener('click', function () {
 })
 
 
-const n1 = document.getElementById("n1");
-const to1 = document.getElementById("to1");
-const n2 = document.getElementById("n2");
-const to2 = document.getElementById("to2");
-const n3 = document.getElementById("n3");
-const to3 = document.getElementById("to3");
+const n1 = document.getElementById("name1");
+const to1 = document.getElementById("email1");
+const n2 = document.getElementById("name2");
+const to2 = document.getElementById("email2");
+const n3 = document.getElementById("name3");
+const to3 = document.getElementById("email3");
 
 const Placeholder = "https://jsonplaceholder.typicode.com/users"
 let res2;
@@ -55,30 +55,13 @@ fetch(Placeholder)
     .then(r => {
         res2 = r;
         console.log(res2)
-        n1.innerHTML = `<b>Name:</b> ${res2[1].name}`
-        to1.innerHTML = `<b>City:</b> ${res2[1].address.city}`
-        n2.innerHTML = `<b>Name:</b> ${res2[2].name}`
-        to2.innerHTML = `<b>City:</b> ${res2[2].address.city}`
-        n3.innerHTML = `<b>Name:</b> ${res2[3].name}`
-        to3.innerHTML = `<b>City:</b> ${res2[3].address.city}`
+        n1.innerHTML = `<b>Name:</b> ${res2[2].name}`
+        to1.innerHTML = `<b>email:</b> ${res2[3].email}`
+        n2.innerHTML = `<b>Name:</b> ${res2[5].name}`
+        to2.innerHTML = `<b>email:</b> ${res2[3].email}`
+        n3.innerHTML = `<b>Name:</b> ${res2[2].name}`
+        to3.innerHTML = `<b>email:</b> ${res2[1].email}`
     })
-    .catch(err => console.log(err))
 
 
 
-    const my = "data.json";
-    let res3;
-    const ph1 = document.getElementById("ph1");
-    const ph2 = document.getElementById("ph2");
-    const ph3 = document.getElementById("ph3");
-    const ph4 = document.getElementById("ph4");
-    fetch(my)
-    .then(response => response.json())
-    .then(r => {
-        res3 = r; 
-        ph1.innerHTML = `<b>Product:</b> ${res3[0].phone.name}`;
-        ph2.innerHTML = `<b>Amount:</b> ${res3[0].phone.amount}`;
-        ph3.innerHTML = `<b>Product:</b> ${res3[1].phone.name}`;
-        ph4.innerHTML = `<b>Amount:</b> ${res3[1].phone.amount}`;
-        })
-    .catch(err => console.log(err)) 
