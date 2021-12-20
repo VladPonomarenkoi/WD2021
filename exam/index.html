@@ -5,10 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Exam</title>
   </head>
   <body>
-    <div>123123</div>
+    <header>
+      <div class="logo">Laptops.com</div>
+      <nav>
+        <ul class="computer">
+          <li>Laptops</li>
+          <li>Discounts</li>
+          <li>Popular</li>
+          <li>Prices</li>
+          <li>Cart</li>
+        </ul>
+        <div class="mobile">
+          <i class="fas fa-bars"></i>
+          <ul class="mobileList">
+            <li>Laptops</li>
+            <li>Discounts</li>
+            <li>Popular</li>
+            <li>Prices</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="heroSection">
+      <div class="center">
+        <h1>DISCOUNT 50%!</h1>
+      </div>
+    </section>
+    <section class="news">
+      <div class="newsItems"></div>
+    </section>
+    <section class="forma">
+      <form action="#" onsubmit="sendForm();return false" id="forma">
+        <h2>Contact us!</h2>
+        <input type="tel" placeholder="Enter your phone" id="phone" />
+        <input type="text" placeholder="And your name" id="name" />
+        <input type="submit" value="Send" />
+      </form>
+      <p class="resulttask2"></p>
+    </section>
+    <footer>
+      <p>
+        20.12.2021 Веб-дизайн та веб-програмування МIT-21 варіант 22 (c)
+        Пономаренко Владислав Анатолійович
+      </p>
+    </footer>
   </body>
-  <script src="./script/index.js"></script>
+  <script src="./index.js"></script>
 </html>
